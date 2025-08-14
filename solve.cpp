@@ -192,6 +192,12 @@ int main(){
     fastio;
     // cout << setprecision(12) << fixed;
 
+    // Redirects input from input.txt
+    // freopen("input.txt", "r", stdin);
+
+    // Redirects cout to output.txt
+    // freopen("output.txt", "w", stdout);
+
     preprocess();
 
     int num_tc=1;

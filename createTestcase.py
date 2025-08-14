@@ -39,7 +39,7 @@ def generate_string_testcases(num_cases, case_length, charset=None, min_char=Non
         testcases.append(s)
     return testcases
 
-def write_testcases_to_file(testcases, output_file="output.txt", output_as_list=False):
+def write_testcases_to_file(testcases, output_file="testcase.txt", output_as_list=False):
     with open(output_file, "w") as f:
         for case in testcases:
             if output_as_list:
@@ -59,7 +59,7 @@ def main_int():
     }
     all_cases = generate_int_testcases(**params)
     output_as_list = False
-    write_testcases_to_file(all_cases, output_file="output.txt", output_as_list=output_as_list)
+    write_testcases_to_file(all_cases, output_file="testcase.txt", output_as_list=output_as_list)
 
 def main_char():
     params = {
@@ -71,7 +71,7 @@ def main_char():
     }
     all_cases = generate_char_testcases(**params)
     output_as_list = False
-    write_testcases_to_file(all_cases, output_file="output.txt", output_as_list=output_as_list)
+    write_testcases_to_file(all_cases, output_file="testcase.txt", output_as_list=output_as_list)
 
 def main_string():
     params = {
@@ -83,7 +83,7 @@ def main_string():
     }
     all_cases = generate_string_testcases(**params)
     output_as_list = False
-    write_testcases_to_file(all_cases, output_file="output.txt", output_as_list=output_as_list)
+    write_testcases_to_file(all_cases, output_file="testcase.txt", output_as_list=output_as_list)
 
 if __name__ == "__main__":
     # Uncomment the one you want to run
